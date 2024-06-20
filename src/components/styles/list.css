@@ -1,0 +1,25 @@
+.list-entry-container {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.row > .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row > .col p {
+    margin: 0;
+    font-size: 1rem;
+}
