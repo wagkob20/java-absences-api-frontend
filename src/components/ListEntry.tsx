@@ -16,11 +16,11 @@ const ListEntry: React.FC<ListEntryProps> = ({ student, index }) => {
     const getMedal = (index: number) => {
         switch (index) {
             case 0:
-                return '🥇'; // Gold medal
+                return '🥇';
             case 1:
-                return '🥈'; // Silver medal
+                return '🥈';
             case 2:
-                return '🥉'; // Bronze medal
+                return '🥉';
             default:
                 return index + 1;
         }

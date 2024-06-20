@@ -14,7 +14,7 @@ const FehlstundenForm = () => {
         event.preventDefault();
 
         const body = {
-            date: new Date().toISOString().split('T')[0],  // Format date as YYYY-MM-DD
+            date: new Date().toISOString().split('T')[0],  //YYYY-MM-DD
             hoursAbsent: fehlstunden
         };
 
@@ -22,7 +22,7 @@ const FehlstundenForm = () => {
             const response = await axios.post('http://localhost:8080/api/absences/record', body, {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}`  // Assuming you need to pass a token for authentication
+                    'Authorization': `Bearer ${token}`
                 }
             });
 

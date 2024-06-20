@@ -15,7 +15,6 @@ const Register = () => {
     const handleRegister = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        // Trim inputs and check if any field is empty
         const trimmedFullName = fullName.trim();
         const trimmedEmail = email.trim();
         const trimmedPassword = password.trim();

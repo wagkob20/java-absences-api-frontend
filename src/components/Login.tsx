@@ -20,7 +20,7 @@ const Login = () => {
             password: password.trim()
         };
 
-        console.log("Sending login request with body:", body);  // Log the body to verify it
+        console.log("Sending login request with body:", body);
 
         try {
             const response = await axios.post('http://localhost:8080/api/auth/login', body, {
@@ -31,7 +31,7 @@ const Login = () => {
 
             if (response.status === 200) {
                 const data = response.data;
-                saveToken(data.token); // Save the token in context and local storage
+                saveToken(data.token);
                 console.log(data.token);
                 navigate("/changeFehlstunden");
             } else {
